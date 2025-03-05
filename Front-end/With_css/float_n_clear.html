@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Float and Clear</title>
+     <link rel="stylesheet" href="styles.css">
+
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: Arial, Helvetica, sans-serif;
+          }
+
+          .container {
+               width: 100%;
+               height: 100vh;
+          }
+
+          .box {
+               padding: 25px;
+               text-align: center;
+               color: white;
+          }
+
+          #box1 {
+               background-color: teal;
+               width: 100%;
+               height: 15vh;
+               float: left;
+          }
+
+          #box2 {
+               background-color: rgb(30, 146, 107);
+               width: 25%; 
+               height: 70vh; 
+               float: left;
+          }
+
+          #box3 {
+               background-color: rgb(115, 202, 173);
+               width: 75%; 
+               height: 70vh; 
+               float: left;
+          }
+
+          #box4 {
+               background-color: rgb(21, 109, 80);
+               width: 100%;
+               height: 15vh;
+               float: left;
+               clear: both;
+          }
+
+     </style>
+
+</head>
+<body>
+     <div class="container">
+          <div class="box" id="box1">header</div>   
+          <div class="box" id="box2">sidebar</div>   
+          <div class="box" id="box3">content</div>   
+          <div class="box" id="box4">footer</div> 
+      </div>        
+
+</body>
+</html>

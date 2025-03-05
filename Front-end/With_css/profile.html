@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhunel Teves | Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="profile.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute("href")).scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Jhunel Teves</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Hi, I'm <span>Jhunel</span> 👋</h2>
+            <p class="tagline">Interested in Mobile Development | Networking | Startup Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+               Hi, I'm Jhunel Teves! I’m a mobile developer and networking enthusiast based in Cagayan de Oro. 
+               As a student at USTP, I focus on building seamless mobile applications using React Native 
+               while continuously exploring networking technologies to enhance digital experiences.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>SwapMate</h3>
+                    <p>A USTP marketplace for buying and selling second-hand goods affordably.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-links">
+                <a href="mailto:jhunel.teves@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/jhunelteves" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.facebook.com/jhunel.cris.teves" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jhunel Teves. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
